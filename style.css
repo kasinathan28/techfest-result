@@ -16,19 +16,20 @@ nav {
 }
 
 .logo img {
+    object-fit: contain;
   width: 230px;
   margin: 15px;
 }
 .banner {
   width: 80%;
-  height: 400px;
   justify-content: center;
-  margin: auto;
+  margin: 0px;
   display: flex;
 }
 .banner img {
-    margin-top: 30px;
+  margin-top: 30px;
   width: 40%;
+  object-fit: contain;
 }
 
 .coming-soon-container {
@@ -47,8 +48,8 @@ nav {
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
 }
-.coming-soon-container h1{
-    font-size: 42px;
+.coming-soon-container h1 {
+  font-size: 42px;
 }
 .coming-soon-container p {
   color: white;
@@ -87,25 +88,12 @@ p {
 }
 
 #countdown {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin-top: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 36px;
 }
-
-/* Media Queries for Tablet */
-/* @media (max-width: 768px) {
-    .logo img {
-        max-width: 200px; 
-        display: block;
-        margin: auto;
-    }
-
-    .coming-soon-container {
-        padding: 15px;
-    }
-} */
 
 /* Media Queries for Mobile Phones */
 @media (max-width: 768px) {
@@ -140,12 +128,15 @@ p {
     margin: auto;
     margin-top: 50px;
     text-align: center;
+    height: auto;
+    min-height: 400px;
+    text-wrap: wrap;
   }
   .coming-soon-container p {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .loader {
-    top: 70%;
+    top: 80%;
   }
 }
