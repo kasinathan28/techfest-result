@@ -98,7 +98,7 @@ p {
  */
 
 /* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     body{
         background-image: url("../assets/bg.png");
