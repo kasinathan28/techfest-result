@@ -23,6 +23,7 @@ nav {
   width: 230px;
   float: left;
   margin: 15px;
+  margin-left: 50px;
 }
 
 .banner {
@@ -141,21 +142,25 @@ p {
     min-height: 400px;
     text-wrap: wrap;
   }
-
+  .coming-soon-container h1{
+    padding: 10px;
+  }
   .coming-soon-container p {
+    padding: 10px;
     font-size: 20px;
   }
 
   .loader {
-    top: 60%;
+    top: 62%;
+    left: 50%;
   }
 
   #countdown {
     font-size: 14px;
     color: #fff;
     margin-top: 100px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 36px;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;    font-size: 36px;
     text-wrap: wrap;
   }
 }
