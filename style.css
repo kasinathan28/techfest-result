@@ -109,6 +109,14 @@ p {
         overflow: hidden;
         padding: 0px;
     }
+    .banner{
+        width: 80%;
+        height: 300px;
+    }
+    .banner img{
+        width: 150px;
+        height: auto;
+    }
 
     .logo img {
         max-width: 180px; 
