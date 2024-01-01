@@ -124,6 +124,9 @@ p {
         margin-top: 50px;
         text-align: center;
     }
+    .coming-soon-container p{
+        font-size: 28px;
+    }
 
     .loader{
         top: 65%;
