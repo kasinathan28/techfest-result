@@ -163,4 +163,10 @@ p {
     font-family: 'Playfair Display', serif;    font-size: 36px;
     text-wrap: wrap;
   }
+
+   /* Change the color of seconds in the countdown */
+   #countdown span.seconds {
+    color: #ffa902; /* Replace with your desired color */
+  }
+
 }
