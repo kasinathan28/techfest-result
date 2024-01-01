@@ -102,6 +102,10 @@ p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 36px;
 }
+#countdown span.seconds {
+    color: #ffa902; /* Replace with your desired color */
+  }
+
 
 /* Media Queries for Mobile Phones */
 @media (max-width: 768px) {
