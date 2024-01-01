@@ -1,87 +1,98 @@
-
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    /* background-color: #593266; */
-    background-image: url("../assets/bg.png");
-
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #593266; */
+  background-image: url("../assets/bg.png");
 }
 
 nav {
-    background-color: #33014a;
-    color: white;
-    height: 110px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: #33014a;
+  color: white;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .logo img {
-    width: 230px;
-    margin: 15px;
+  width: 230px;
+  margin: 15px;
+}
+.banner {
+  width: 80%;
+  height: 400px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+.banner img {
+    margin-top: 30px;
+  width: 40%;
 }
 
 .coming-soon-container {
-    text-align: center;
-    width: 900px;
-    height: 500px;
-    padding: 50px;
-    margin: 50px auto;
-    /* background-color: #fff; */
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    background: rgba( 255, 255, 255, 0.35 );
-    position: relative;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    backdrop-filter: blur( 4.5px );
-    -webkit-backdrop-filter: blur( 4.5px );
-
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  padding: 50px;
+  margin: 50px auto;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 0.35);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
 }
-
-.coming-soon-container p ,h1{
-    color: white;
+.coming-soon-container h1{
+    font-size: 42px;
+}
+.coming-soon-container p {
+  color: white;
+  font-size: 28px;
 }
 .loader {
-    border: 8px solid #33014a;
-    border-top: 8px solid #ffa902;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -25px;
-    margin-left: -25px;
-    animation: spin 1s linear infinite;
+  border: 8px solid #33014a;
+  border-top: 8px solid #ffa902;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h1 {
-    color: #fff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 p {
-    color: #fff;
+  color: #fff;
 }
 
 #countdown {
-    font-size: 24px;
-    color: #fff;
-    margin-top: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 36px;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 36px;
 }
-
-
-
 
 /* Media Queries for Tablet */
 /* @media (max-width: 768px) {
@@ -96,49 +107,45 @@ p {
     }
 } */
 
-
 /* Media Queries for Mobile Phones */
 @media (max-width: 768px) {
+  body {
+    background-image: url("../assets/bg.png");
+    display: block;
+  }
 
-    body{
-        background-image: url("../assets/bg.png");
-    }
-   
-    nav {
-        width: 100%;
-        overflow: hidden;
-        padding: 0px;
-    }
-    .banner{
-        width: 80%;
-        height: 300px;
-    }
-    .banner img{
-        width: 150px;
-        height: auto;
-    }
+  nav {
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+  }
+  .banner {
+    width: 100%;
+    height: 300px;
+  }
+  .banner img {
+    max-width: auto;
+  }
 
-    .logo img {
-        max-width: 180px; 
-        padding: 0;
-        margin-left: 30px;
-    }
+  .logo img {
+    max-width: 180px;
+    padding: 0;
+    margin-left: 30px;
+  }
 
-    .coming-soon-container {
-        width: 80%;
-        padding: 0;
-        height: 400px;
-        margin: auto;
-        margin-top: 50px;
-        text-align: center;
-    }
-    .coming-soon-container p{
-        font-size: 28px;
-    }
+  .coming-soon-container {
+    width: 80%;
+    padding: 0;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .coming-soon-container p {
+    font-size: 28px;
+  }
 
-    .loader{
-        top: 70%;
-    }
-
+  .loader {
+    top: 70%;
+  }
 }
-
