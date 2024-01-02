@@ -16,6 +16,7 @@ nav {
   display: flex;
   padding: 10px;
   align-items: center;
+
 }
 
 .logo img {
@@ -43,7 +44,7 @@ nav {
 .coming-soon-container {
   text-align: center;
   width: 850px;
-  height: 500px;
+  height: 700px;
   padding: 50px;
   margin: 50px auto;
   /* background-color: #fff; */
@@ -56,6 +57,7 @@ nav {
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
 }
+
 .coming-soon-container h1 {
   font-size: 42px;
 }
@@ -63,6 +65,41 @@ nav {
   color: white;
   font-size: 28px;
 }
+
+#countdown {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 100px;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;    font-size: 36px;
+  text-wrap: wrap;
+}
+
+ /* Change the color of seconds in the countdown */
+ #countdown span.seconds {
+  color: #ffa902; /* Replace with your desired color */
+}
+
+
+
+
+
+.coupon{
+width: 700px;
+justify-content: center;
+margin: auto;
+height: auto;
+}
+.coupon img{
+margin-top: 30px;
+width: 700px;
+height: 300px;
+object-fit: contain;
+padding-bottom: 50px;
+}
+
+
+
 .loader {
   border: 8px solid #33014a;
   border-top: 8px solid #ffa902;
@@ -70,7 +107,7 @@ nav {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 50%;
   margin-top: -25px;
   margin-left: -25px;
@@ -106,6 +143,8 @@ p {
     color: #ffa902; /* Replace with your desired color */
   }
 
+  
+  
 
 /* Media Queries for Mobile Phones */
 @media (max-width: 768px) {
@@ -155,22 +194,23 @@ p {
   }
 
   .loader {
-    top: 62%;
+    top: 45%;
     left: 50%;
   }
 
-  #countdown {
-    font-size: 14px;
-    color: #fff;
-    margin-top: 100px;
-    padding: 10px;
-    font-family: 'Playfair Display', serif;    font-size: 36px;
-    text-wrap: wrap;
-  }
+  .coupon{
+    width: 300px;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    }
+    .coupon img{
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+    padding-bottom: 50px;
+    }
 
-   /* Change the color of seconds in the countdown */
-   #countdown span.seconds {
-    color: #ffa902; /* Replace with your desired color */
-  }
 
 }
