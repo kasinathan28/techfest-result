@@ -9,7 +9,6 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     document.getElementById("countdown").innerHTML =
     days + "d : " + hours + "h : " + minutes + "m : <span class='seconds'>" + seconds + "s</span>";
-  // If the countdown is over, display a message
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
