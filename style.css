@@ -57,6 +57,8 @@ nav {
     font-size: 14px;
   }
 }
+
+
 .banner {
     width: 80%;
     justify-content: center;
@@ -66,9 +68,17 @@ nav {
     height: 100%;
   }
 .banner img {
-  margin-top: 150px;
+  margin-top: 8%;
+  
   width: 40%;
   object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+  .banner img {
+   
+    margin-bottom: 8%;
+  }
 }
 
 
@@ -118,6 +128,7 @@ nav {
     font-size: 56px; /* Adjust the font size for large screens */
     font-family: 'Karla', sans-serif; /* Use the 'Karla' font family */
     font-weight: 800; 
+  
   }
 
   .coming-soon-container h2 {
@@ -158,12 +169,12 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-p {
+p,pre {
   color: #fff;
 }
 
 
-  
+
   
 
 /* Media Queries for Mobile Phones */
@@ -203,6 +214,7 @@ p {
   }
   .coming-soon-container h1{
     padding: 10px;
+  
   }
   .coming-soon-container p {
     padding: 10px;
@@ -228,7 +240,7 @@ p {
     padding-bottom: 50px;
   }
   
-  .coupon P{
+  .coupon P, pre{
     margin-bottom: -30px;
     font-size: 10px;
   }
@@ -341,7 +353,7 @@ p {
   }
 }
 @media screen and (min-width: 769px) {
-  .coupon p {
+  .coupon p,pre {
     margin-bottom: -10px;
     font-size: 14px; 
     text-align: center;/* Add a value for margin-right and don't forget the semicolon */
