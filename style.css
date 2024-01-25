@@ -1,15 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  /* background-color: #593266; */
   justify-content: center;
   margin: auto;
   display: flex;
   flex-direction: column;
   background-image: url("../assets/bg.png");
+  padding-bottom: 100px;
 }
+
 body, html {
-  overflow-x: hidden; /* Prevent horizontal scrolling for the entire page */
+  overflow-x: hidden;
 }
 
 nav {
@@ -19,22 +20,9 @@ nav {
   display: flex;
   padding: 10px;
   align-items: center;
-  width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling for the nav element */
+  width: auto; 
+  overflow-x: hidden;
 }
-
-
-nav {
-  background-color: #33014a;
-  color: white;
-  height: 60px;
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  width: auto; /* Set width to 100% */
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
 
 .main h3 {
   object-fit: contain;
@@ -46,138 +34,53 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .main h3{
+  .main h3 {
     margin-left: 740px;
     font-size: 25px;
   }
 }
+
 @media (max-width: 200px) {
-  .main h3{
+  .main h3 {
     margin-left: 60px;
     font-size: 14px;
   }
 }
 
-
 .banner {
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto; /* Center horizontally */
-    align-items: center;
-    display: flex;
-    height: 100%;
-  }
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
 .banner img {
   margin-top: 8%;
-  
   width: 40%;
   object-fit: contain;
 }
 
 @media (min-width: 1200px) {
   .banner img {
-   
     margin-bottom: 8%;
   }
 }
 
-
-
-/* .coming-soon-container {
-  text-align: center;
-  width: 850px;
-  height: 700px;
-  padding: 50px;
-  margin: 50px auto;
-  /* background-color: #fff; */
-  /* border-radius: 10px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  background: rgba(255, 255, 255, 0.35);
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-} */ 
-
-.coming-soon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.result-image {
+  width: 100%;
+  height: auto;
   justify-content: center;
-  height: 100vh; /* Adjust as needed to center vertically */
+  display: flex;
 }
 
-.coming-soon-container h1 {
-  font-size: 24px;
-  margin-top: -20px;
-  font-family: 'Karla', sans-serif; /* Use the 'Karla' font family */
-    font-weight: 800; 
+.result-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px; /* Added margin here */
 }
 
-.coming-soon-container h2 {
-  color: white;
-  font-size: 18px;
-  margin-top: 32px; 
-  font-family: 'Karla', sans-serif; /* Use the 'Karla' font family */
-    font-weight: 800; /* Adjust as needed for spacing between h1 and h2 */
-}
-
-@media screen and (min-width: 768px) {
-  .coming-soon-container h1 {
-    font-size: 56px; /* Adjust the font size for large screens */
-    font-family: 'Karla', sans-serif; /* Use the 'Karla' font family */
-    font-weight: 800; 
-  
-  }
-
-  .coming-soon-container h2 {
-    font-size: 44px; /* Adjust the font size for large screens */
-    margin-top: -40px;
-    font-family: 'Karla', sans-serif; /* Use the 'Karla' font family */
-    font-weight: 800; 
-  }
-}
-
-
-
-
-
-
-
-.coupon{
-width: 700px;
-justify-content: center;
-margin: auto;
-height: auto;
-}
-.coupon img{
-margin-top: 30px;
-width: 100%;
-height: auto;
-object-fit: contain;
-padding-bottom: 50px;
-}
-
-
-
-
-
-
-h1 {
-  color: #fff;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-p,pre {
-  color: #fff;
-}
-
-
-
-  
-
-/* Media Queries for Mobile Phones */
 @media (max-width: 768px) {
   body {
     background-image: url("../assets/bg.png");
@@ -189,173 +92,22 @@ p,pre {
     overflow: hidden;
     padding: 0px;
   }
+
   .banner {
     width: 100%;
     height: 100px;
     margin: 0px;
   }
+
   .banner img {
     max-width: auto;
   }
+  .result-image img {
 
-  
-
-  .coming-soon-container {
-    width: 80%;
-    padding: 0;
-    min-height: 400px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
     margin: auto;
     margin-top: 50px;
-    text-align: center;
-    height: auto;
-    min-height: 400px;
-    text-wrap: wrap;
   }
-  .coming-soon-container h1{
-    padding: 10px;
+}
   
-  }
-  .coming-soon-container p {
-    padding: 10px;
-    font-size: 20px;
-    
-  }
-
-  
-
-  .coupon {
-    width: 300px;
-    justify-content: center;
-    margin: auto;
-    height: auto;
-  }
-  
-  .coupon img {
-    margin-top: 30px;
-    width: 110%; /* Use 100% width to make the image responsive within its container */
-    height: 200px; /* Set a maximum height for the image */
-    object-fit: contain;
-    margin-left: -20px;
-    padding-bottom: 50px;
-  }
-  
-  .coupon P, pre{
-    margin-bottom: -30px;
-    font-size: 10px;
-  }
-
-
-}
-
-/* Common styles for countdown */
-.countdown {
-  padding: 20px;
-  color: #ffffff;
-  text-align: center;
-}
-
-/* Styles for countdown container */
-#countdown {
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Styles for countdown details */
-#countdown1 {
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Styles for countdown spans */
-#countdown span {
-  margin: 0 14px;
-  font-family: 'Karla', sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-}
-
-/* Styles for countdown1 paragraphs */
-#countdown1 p {
-  margin: 0 -1px;
-  font-family: 'Karla', sans-serif;
-  font-weight: 50;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-/* Pseudo-elements for countdown1 paragraphs */
-#countdown1 p.d:before {
-  content: "\00a0";
-  margin-right: 80px;
-}
-
-#countdown1 p.h:before {
-  content: "\00a0";
-  margin-right: 20px;
-}
-
-#countdown1 p.m:before {
-  content: "\00a0";
-  margin-right: 20px;
-}
-
-#countdown1 p.s:before {
-  content: "\00a0";
-  margin-right: 1px;
-}
-
-#countdown1 p.s:after {
-  content: "\00a0";
-  margin-left: 55px;
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-  #countdown {
-    font-size: 38px; /* Adjust font size for large screens */
-  }
-
-  #countdown1 {
-    font-size: 28px; /* Adjust font size for large screens */
-  }
-
-  #countdown span {
-    font-size: 55px; /* Adjust font size for large screens */
-  }
-  #countdown1 p.d:before {
-    content: "\00a0";
-    margin-right: 30px;
-  }
-  
-  #countdown1 p.h:before {
-    content: "\00a0";
-    margin-right: 80px;
-  }
-  
-  #countdown1 p.m:before {
-    content: "\00a0";
-    margin-right: 50px;
-  }
-  
-  #countdown1 p.s:before {
-    content: "\00a0";
-    margin-right: 50px;
-  }
-  
-  #countdown1 p.s:after {
-    content: "\00a0";
-    margin-left: 1px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .coupon p,pre {
-    margin-bottom: -10px;
-    font-size: 14px; 
-    text-align: center;/* Add a value for margin-right and don't forget the semicolon */
-  }
-}
